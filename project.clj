@@ -6,8 +6,6 @@
   :dependencies [[org.clojure/clojurescript "0.0-2197"]
                  [om "0.5.3"]]
   :plugins [[lein-cljsbuild "1.0.3"]]
-  :cljsbuild {
-    :builds [{:source-paths ["src"]
-              :compiler {
-                :output-to "main.js"
-                :optimizations :whitespace}}]})
+  :cljsbuild {:builds [{:source-paths ["src"]
+                        :compiler {:output-to "main.js"
+                                   :optimizations :whitespace}}]})
